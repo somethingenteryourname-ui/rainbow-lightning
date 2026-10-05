@@ -1,0 +1,32 @@
+# ---------------- Rainbow Lightning ----------------
+# 20 ticks = 1 second
+
+# How long you hold right-click before the beam fires
+charge-ticks: 20
+
+beam:
+  # How far the beam reaches (blocks)
+  range: 48
+  # How close to the beam an entity has to be to get hit
+  hit-radius: 1.0
+  # Damage per zap (2 = 1 heart). Ignores armor, still pops totems.
+  damage: 2.5
+  # Ticks between zaps (4 = 5 zaps per second = 12.5 damage/second by default)
+  damage-interval-ticks: 4
+  set-on-fire: true
+  slow-targets: true
+  # Visual-only lightning bolts at the impact spot (no extra damage or fire)
+  lightning-strike-effect: true
+  lightning-strike-interval-ticks: 15
+  # How fast the rainbow colors cycle
+  rainbow-speed: 0.02
+
+scorch:
+  enabled: true
+  # Size of the burned patch around the impact point
+  radius: 2.5
+  # Chance for a little fire to appear on burned blocks (0 = never)
+  fire-chance: 0.06
+  # 0 = burned ground stays forever.
+  # Any other number = the ground turns back to normal after that many seconds
+  restore-after-seconds: 0

@@ -1,0 +1,22 @@
+name: RainbowLightning
+version: '${project.version}'
+main: me.rainbowlightning.RainbowLightningPlugin
+api-version: '1.21'
+description: A lightning rod that fires a rainbow lightning beam.
+
+commands:
+  rainbowrod:
+    description: Get the Rainbow Storm Rod (or /rainbowrod reload)
+    usage: /rainbowrod [player|reload]
+    aliases: [rrod]
+
+permissions:
+  rainbowlightning.give:
+    description: Use /rainbowrod to get or give the rod
+    default: op
+  rainbowlightning.reload:
+    description: Reload the config
+    default: op
+  rainbowlightning.use:
+    description: Fire the beam with the rod
+    default: true
